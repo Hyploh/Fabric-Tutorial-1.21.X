@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial mod",
+	"description": "This is a tutorial mod test",
+	"authors": [
+		"Hypl!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/"
+	},
+	"license": "MQ",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hypl.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.hypl.tutorialmod.TutorialModDataGenerator"
+		],
+      "client": [
+        "net.hypl.tutorialmod.TutorialModClient"
+      ]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
