@@ -13,6 +13,7 @@
   "block.tutorialmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate ore",
 
   "block.tutorialmod.magic_block": "Magic Block",
+  "block.tutorialmod.garden_mesh": "Garden Mesh",
 
   "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks",
@@ -23,5 +24,6 @@
   "tooltip.tutorialmod.chisel": "Press §eShift§r for more information",
 
   "tooltip.tutorialmod.ladybug.tooltip": "§b§lTesh§r's §4Lovely§r §6Creation§r §c<3§r",
-  "tooltip.tutorialmod.ladybug.tooltip2": "§cOh Mother I can feel the soil falling over my head"
+  "tooltip.tutorialmod.ladybug.tooltip2": "§cOh Mother I can feel the soil falling over my head",
+  "tooltip.tutorialmod.garden_mesh.tooltip": "Press this beautiful block to dispense §cLady§fbugs"
 }

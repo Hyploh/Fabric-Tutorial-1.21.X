@@ -1,0 +1,3 @@
+// 1.21	2026-01-15T20:09:49.685608	Tutorial mod/Tags for minecraft:block
+079e21ee82e19be3b06c0ad61d06e9bdce588108 data/minecraft/tags/block/needs_iron_tool.json
+c52562ba8bf97bf24d7fcbbc940bfc616fb735ff data/minecraft/tags/block/mineable/pickaxe.json
