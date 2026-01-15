@@ -24,13 +24,18 @@ import java.util.List;
 public class GardenMesh extends DropperBlock {
     public GardenMesh(Settings settings) {super(settings); }
 
-    @Override
-    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+        @Override
+        protected ActionResult onUse(BlockState state, World world, BlockPos pos,
+                                     PlayerEntity player, BlockHitResult hit) {
 
-        world.playSound(player, pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS, 1f,1f);
-        dropStack(world, pos, new ItemStack(ModItems.LADYBUG));
-        return ActionResult.SUCCESS;
-    }
+                world.playSound(
+                        null,
+                        pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS, 1f, 1f
+                );
+
+            return ActionResult.SUCCESS;
+        }
+
 
     @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
