@@ -21,6 +21,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.RAW_PINK_GARNET)
                 .add(Items.COAL)
                 .add(Items.STICK)
-                .add(Items.APPLE);
+                .add(Items.APPLE)
+                .add(Items.DIAMOND);
     }
 }

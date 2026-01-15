@@ -4,6 +4,7 @@
   "item.tutorialmod.chisel": "Chisel",
   "item.tutorialmod.cauliflower": "Cauliflower",
   "item.tutorialmod.starlight_ashes": "Starlight_Ashes",
+  "item.tutorialmod.ladybug": "§cLady§fbug§r",
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
@@ -19,5 +20,8 @@
   "tooltip.tutorialmod.magic_block.tooltip": "This block is very §5MAGICAL§r",
   "tooltip.tutorialmod.cauliflower.tooltip": "This is delicious!",
   "tooltip.tutorialmod.chisel.shift_down": "This tool chisels §7Blocks§r into their §4Brick§r variants!",
-  "tooltip.tutorialmod.chisel": "Press §eShift§r for more information"
+  "tooltip.tutorialmod.chisel": "Press §eShift§r for more information",
+
+  "tooltip.tutorialmod.ladybug.tooltip": "§b§lTesh§r's §4Lovely§r §6Creation§r §c<3§r",
+  "tooltip.tutorialmod.ladybug.tooltip2": "§cOh Mother I can feel the soil falling over my head"
 }
