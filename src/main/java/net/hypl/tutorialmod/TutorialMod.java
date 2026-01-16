@@ -24,8 +24,5 @@ public class TutorialMod implements ModInitializer {
         ModBlocks.registerModBlocks();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
-
-		DispenserBehavior.registerDefaults();
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GARDEN_MESH, RenderLayer.getCutout());
 	}
 }
