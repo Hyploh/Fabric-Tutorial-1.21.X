@@ -1,12 +1,8 @@
 package net.hypl.tutorialmod.block.custom;
 
-import net.hypl.tutorialmod.item.ModItems;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.DispenserBlock;
 import net.minecraft.block.DropperBlock;
-import net.minecraft.block.dispenser.BlockPlacementDispenserBehavior;
-import net.minecraft.block.dispenser.DispenserBehavior;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -35,8 +31,6 @@ public class GardenMesh extends DropperBlock {
 
             return ActionResult.SUCCESS;
         }
-
-
     @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
         tooltip.add(Text.translatable("tooltip.tutorialmod.garden_mesh.tooltip"));
