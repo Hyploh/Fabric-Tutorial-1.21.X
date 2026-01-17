@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.hypl.tutorialmod.block.ModBlocks;
+import net.hypl.tutorialmod.component.ModDataComponentTypes;
 import net.hypl.tutorialmod.item.ModItemGroups;
 import net.hypl.tutorialmod.item.ModItems;
 import net.minecraft.block.dispenser.DispenserBehavior;
@@ -22,6 +23,8 @@ public class TutorialMod implements ModInitializer {
 
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES,600);
 	}
