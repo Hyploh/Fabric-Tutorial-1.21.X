@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "R": {
+    "P": {
       "item": "tutorialmod:pink_garnet_block"
     }
   },
   "pattern": [
-    "RRR",
-    "RRR"
+    "PPP",
+    "PPP"
   ],
   "result": {
     "count": 1,

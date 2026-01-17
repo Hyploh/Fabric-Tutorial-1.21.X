@@ -10,6 +10,7 @@ import net.hypl.tutorialmod.item.ModItemGroups;
 import net.hypl.tutorialmod.item.ModItems;
 import net.minecraft.block.dispenser.DispenserBehavior;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
