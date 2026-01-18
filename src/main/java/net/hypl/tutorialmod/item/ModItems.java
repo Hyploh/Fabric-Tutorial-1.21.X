@@ -79,6 +79,9 @@ public class ModItems {
     public static final Item HYPL_SMITHING_TEMPLATE = registerItem("hypl_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(TutorialMod.MOD_ID, "hypl"), FeatureFlags.VANILLA));
 
+    public static final Item HYPL_BOW = registerItem("hypl_bow",
+            new BowItem(new Item.Settings().maxDamage(500)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
     }
