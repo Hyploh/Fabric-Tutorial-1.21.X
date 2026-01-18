@@ -5,6 +5,7 @@ import net.hypl.tutorialmod.TutorialMod;
 import net.hypl.tutorialmod.block.custom.GardenMesh;
 import net.hypl.tutorialmod.block.custom.MagicBlock;
 import net.hypl.tutorialmod.block.custom.PinkGarnetLampBlock;
+import net.hypl.tutorialmod.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
@@ -33,7 +34,7 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
-            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.WET_SPONGE)));
+            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final Block GARDEN_MESH = registerBlock("garden_mesh",
             new GardenMesh(AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.BAMBOO_SAPLING).nonOpaque()));
