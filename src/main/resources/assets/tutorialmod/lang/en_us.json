@@ -22,6 +22,8 @@
 
   "item.tutorialmod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
 
+  "item.tutorialmod.hypl_armor_trim_smithing_template": "Hypl Smithing Template",
+
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
 
@@ -53,5 +55,8 @@
 
   "tooltip.tutorialmod.ladybug.tooltip": "§b§lTesh§r's §4Lovely§r §6Creation§r §c<3§r",
   "tooltip.tutorialmod.ladybug.tooltip2": "§cOh Mother I can feel the soil falling over my head",
-  "tooltip.tutorialmod.garden_mesh.tooltip": "Tesh's wonderful creation <3"
+  "tooltip.tutorialmod.garden_mesh.tooltip": "Tesh's wonderful creation <3",
+
+  "trim_material.tutorialmod.pink_garnet": "Pink Garnet Material",
+  "trim_pattern.tutorialmod.hypl": "Hypl Armor Pattern"
 }

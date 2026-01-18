@@ -1,4 +1,4 @@
-// 1.21	2026-01-18T11:49:15.479109	Tutorial mod/Recipes
+// 1.21	2026-01-18T12:54:09.283999	Tutorial mod/Recipes
 f9a2d437c934c757199fa262671feb1e5bbedebc data/tutorialmod/recipe/pink_garnet_from_smelting_pink_garnet_ore.json
 cbeccd2ef8630b3f883484ba9fc64768cc0bb02c data/tutorialmod/recipe/pink_garnet_pressure_plate.json
 20ff29d6747251dc88039514f13ddbba87406ae1 data/tutorialmod/recipe/raw_pink_garnet_block.json
@@ -30,6 +30,7 @@ e4ae33d7b5461829f0d6342e361ffab69adf9fbf data/tutorialmod/advancement/recipes/mi
 bd09398ed46d80fe9480effcb46e981e5ce20915 data/tutorialmod/recipe/chisel.json
 7d143a859ca36f38fb3ea56dccd0ae1beb65cab4 data/tutorialmod/advancement/recipes/tools/pink_garnet_hammer.json
 203b3b2f74ef2eb2bcbfae64ad2e06c65a768c29 data/tutorialmod/recipe/pink_garnet_slab.json
+8ee1e694754cedebb63a7f9f36ef8dc8ca81e29b data/tutorialmod/recipe/hypl.json
 4b856eba0f3a623a3815230a56f5421123dbd933 data/tutorialmod/advancement/recipes/tools/pink_garnet_chestplate.json
 2894184a708f034d71474bfe8518ecb3adee37ef data/tutorialmod/recipe/pink_garnet_wall.json
 ed7bd1d296bfd7821fb18ae1a70ca534999c61fb data/tutorialmod/recipe/pink_garnet_leggings.json
@@ -45,6 +46,7 @@ e116ba6e0475e0fe0177875199fdd61fa161e952 data/tutorialmod/recipe/pink_garnet_fro
 e9cf4d7d4c8234aebdd62a5b64df7af9cdcd5172 data/tutorialmod/advancement/recipes/misc/pink_garnet_button.json
 9b4e7ff1cad39a8b7685d9a2dd7b887d2f17c556 data/tutorialmod/advancement/recipes/misc/pink_garnet_wall.json
 a1f3a4b77b379715d66fa22a2736faaada27b937 data/tutorialmod/recipe/pink_garnet_boots.json
+40071b7aa8b66c05489a1f4919b7c8cbbd0fa5be data/tutorialmod/advancement/recipes/misc/hypl.json
 914dd8c2800e4c0e186d900b517aeb3b2aa7a5b1 data/tutorialmod/advancement/recipes/misc/pink_garnet_from_smelting_pink_garnet_deepslate_ore.json
 d75293ad4d755dbd8fe25d6bf6f3228b5787034a data/tutorialmod/recipe/pink_garnet_trapdoor.json
 b04e1c0e5c77287f459aee8652f3f1a2f08ad704 data/tutorialmod/advancement/recipes/tools/pink_garnet_axe.json

@@ -1,0 +1,8 @@
+{
+  "asset_id": "tutorialmod:hypl",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.tutorialmod.hypl"
+  },
+  "template_item": "tutorialmod:hypl_armor_trim_smithing_template"
+}

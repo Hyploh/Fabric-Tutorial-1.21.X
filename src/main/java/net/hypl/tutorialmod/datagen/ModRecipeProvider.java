@@ -173,5 +173,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('P', ModItems.PINK_GARNET)
                 .criterion(hasItem(ModItems.PINK_GARNET),conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(exporter);
+
+        offerSmithingTrimRecipe(exporter, ModItems.HYPL_SMITHING_TEMPLATE, Identifier.of(TutorialMod.MOD_ID, "hypl"));
     }
 }
