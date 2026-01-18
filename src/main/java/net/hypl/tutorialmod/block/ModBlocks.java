@@ -1,6 +1,5 @@
 package net.hypl.tutorialmod.block;
 
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hypl.tutorialmod.TutorialMod;
 import net.hypl.tutorialmod.block.custom.GardenMesh;
@@ -14,8 +13,6 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
@@ -39,7 +36,7 @@ public class ModBlocks {
             new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.WET_SPONGE)));
 
     public static final Block GARDEN_MESH = registerBlock("garden_mesh",
-            new GardenMesh(AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.BAMBOO_SAPLING)));
+            new GardenMesh(AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.BAMBOO_SAPLING).nonOpaque()));
 
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
             new StairsBlock(ModBlocks.PINK_GARNET_BLOCK.getDefaultState(), AbstractBlock.Settings.create().strength(2f).requiresTool()));
