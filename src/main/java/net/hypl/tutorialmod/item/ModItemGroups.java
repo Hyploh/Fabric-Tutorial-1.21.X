@@ -46,6 +46,7 @@ public class ModItemGroups {
                         entries.add(ModItems.HYPL_SMITHING_TEMPLATE);
 
                         entries.add(ModItems.HYPL_BOW);
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
                     }).build());
 
     public static final ItemGroup PINK_GARNET_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

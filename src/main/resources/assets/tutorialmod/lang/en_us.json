@@ -4,6 +4,7 @@
   "item.tutorialmod.chisel": "Chisel",
   "item.tutorialmod.cauliflower": "Cauliflower",
   "item.tutorialmod.starlight_ashes": "Starlight_Ashes",
+
   "item.tutorialmod.ladybug": "§cLady§fbug§r",
   "item.tutorialmod.flower_bulb": "Flower Bulb",
 
@@ -12,7 +13,6 @@
   "item.tutorialmod.pink_garnet_axe": "Pink Garnet Axe",
   "item.tutorialmod.pink_garnet_shovel": "Pink Garnet Shovel",
   "item.tutorialmod.pink_garnet_hoe": "Pink Garnet Hoe",
-
   "item.tutorialmod.pink_garnet_hammer": "Pink Garnet Hammer",
 
   "item.tutorialmod.pink_garnet_helmet": "Pink Garnet Helmet",
@@ -21,10 +21,11 @@
   "item.tutorialmod.pink_garnet_boots": "Pink Garnet Boots",
 
   "item.tutorialmod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
-
   "item.tutorialmod.hypl_armor_trim_smithing_template": "Hypl Smithing Template",
-
   "item.tutorialmod.hypl_bow": "Hypl's Bow",
+
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
