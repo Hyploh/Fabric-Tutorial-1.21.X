@@ -48,5 +48,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.HYPL_SMITHING_TEMPLATE);
 
+        getOrCreateTagBuilder(ModTags.Items.PINK_GARNET_REPAIR)
+                .add(ModItems.PINK_GARNET);
+
     }
 }

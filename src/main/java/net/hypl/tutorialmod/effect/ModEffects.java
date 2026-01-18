@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModEffects {
     public static final RegistryEntry<StatusEffect> SLIMY = registerStatusEffect("slimy",
             new SlimyEffect(StatusEffectCategory.NEUTRAL, 0x36ebab)
-                    .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
+                    .addAttributeModifier(EntityAttributes.MOVEMENT_SPEED,
                             Identifier.of(TutorialMod.MOD_ID, "slimy"), -0.25f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 

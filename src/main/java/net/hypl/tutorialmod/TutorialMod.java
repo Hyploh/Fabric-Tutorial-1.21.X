@@ -5,7 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.hypl.tutorialmod.block.ModBlocks;
 import net.hypl.tutorialmod.component.ModDataComponentTypes;
 import net.hypl.tutorialmod.effect.ModEffects;
@@ -14,12 +14,8 @@ import net.hypl.tutorialmod.item.ModItems;
 import net.hypl.tutorialmod.potion.ModPotions;
 import net.hypl.tutorialmod.sound.ModSounds;
 import net.hypl.tutorialmod.util.HammerUsageEvent;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
-import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -44,7 +40,9 @@ public class TutorialMod implements ModInitializer {
         ModEffects.registerEffects();
         ModPotions.registerPotions();
 
-        FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
+        FuelRegistryEvents.BUILD.register((builder, context) -> {
+            builder.add(ModItems.STARLIGHT_ASHES, 600);
+        });
 
         PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 
@@ -52,7 +50,7 @@ public class TutorialMod implements ModInitializer {
                 -> {
                 if (entity instanceof SheepEntity sheepEntity && world.isClient()) {
                     if(playerEntity.getMainHandStack().getItem() == Items.END_ROD){
-                        playerEntity.sendMessage(Text.literal("What are you doing to that sheep??"));
+                        playerEntity.sendMessage(Text.literal("What are you doing to that sheep??"), false);
                         playerEntity.getMainHandStack().decrement(1);
                     }
 
