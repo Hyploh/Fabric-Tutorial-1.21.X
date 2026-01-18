@@ -7,8 +7,10 @@ import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.hypl.tutorialmod.block.ModBlocks;
 import net.hypl.tutorialmod.component.ModDataComponentTypes;
+import net.hypl.tutorialmod.effect.ModEffects;
 import net.hypl.tutorialmod.item.ModItemGroups;
 import net.hypl.tutorialmod.item.ModItems;
+import net.hypl.tutorialmod.sound.ModSounds;
 import net.hypl.tutorialmod.util.HammerUsageEvent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -33,6 +35,8 @@ public class TutorialMod implements ModInitializer {
         ModBlocks.registerModBlocks();
 
         ModDataComponentTypes.registerDataComponentTypes();
+        ModSounds.registerSounds();
+        ModEffects.registerEffects();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 
