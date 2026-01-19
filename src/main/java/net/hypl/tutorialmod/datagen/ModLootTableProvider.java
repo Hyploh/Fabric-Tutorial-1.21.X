@@ -10,6 +10,7 @@ import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
@@ -53,6 +54,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
         addDrop(ModBlocks.PINK_GARNET_DOOR, doorDrops(ModBlocks.PINK_GARNET_DOOR));
         addDrop(ModBlocks.PINK_GARNET_TRAPDOOR);
+
+        addDrop(ModBlocks.DEADWOOD_LOG);
+        addDrop(ModBlocks.DEADWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_DEADWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_DEADWOOD_WOOD);
+        addDrop(ModBlocks.DEADWOOD_PLANKS);
+        addDrop(ModBlocks.DEADWOOD_SAPLING);
+
+        addDrop(ModBlocks.DEADWOOD_LEAVES, leavesDrops(ModBlocks.DEADWOOD_LEAVES, ModBlocks.DEADWOOD_SAPLING, 0.0625f));
 
         BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.CAULIFLOWER_CROP)
             .properties(StatePredicate.Builder.create().exactMatch(CauliflowerCropBlock.AGE, 6));

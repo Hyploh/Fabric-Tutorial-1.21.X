@@ -17,6 +17,8 @@ public class TutorialModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CAULIFLOWER_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUEBERRY_BUSH, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEADWOOD_SAPLING, RenderLayer.getCutout());
+
         ModModelPredicates.registerModelPredicates();
     }
 }

@@ -2,6 +2,7 @@ package net.hypl.tutorialmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.hypl.tutorialmod.block.ModBlocks;
 import net.hypl.tutorialmod.item.ModItems;
 import net.hypl.tutorialmod.util.ModTags;
 import net.minecraft.item.Items;
@@ -51,5 +52,13 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.PINK_GARNET_REPAIR)
                 .add(ModItems.PINK_GARNET);
 
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DEADWOOD_LOG.asItem())
+                .add(ModBlocks.DEADWOOD_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_DEADWOOD_LOG.asItem())
+                .add(ModBlocks.STRIPPED_DEADWOOD_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.DEADWOOD_PLANKS.asItem());
     }
 }

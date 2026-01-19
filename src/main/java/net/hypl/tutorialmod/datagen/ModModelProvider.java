@@ -49,6 +49,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BLUEBERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
                 BlueberryBushBlock.AGE, 0, 1, 2, 3);
+
+        blockStateModelGenerator.registerLog(ModBlocks.DEADWOOD_LOG).log(ModBlocks.DEADWOOD_LOG).wood(ModBlocks.DEADWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_DEADWOOD_LOG).log(ModBlocks.STRIPPED_DEADWOOD_LOG).wood(ModBlocks.STRIPPED_DEADWOOD_WOOD);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEADWOOD_PLANKS);
+        blockStateModelGenerator.registerSingleton(ModBlocks.DEADWOOD_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.DEADWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
     }
 
     @Override
@@ -84,5 +92,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HYPL_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
+
+        itemModelGenerator.register(ModBlocks.DEADWOOD_SAPLING.asItem(), Models.GENERATED);
     }
 }

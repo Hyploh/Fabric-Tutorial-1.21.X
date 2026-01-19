@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hypl.tutorialmod.TutorialMod;
 import net.hypl.tutorialmod.block.custom.*;
 import net.hypl.tutorialmod.sound.ModSounds;
+import net.hypl.tutorialmod.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -124,6 +125,30 @@ public class ModBlocks {
     public static final Block BLUEBERRY_BUSH = registerBlockWithoutBlockItem("blueberry_bush",
             new BlueberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, "blueberry_bush")))));
+
+    public static final Block DEADWOOD_LOG = registerBlock("deadwood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, "deadwood_log")))));
+    public static final Block DEADWOOD_WOOD = registerBlock("deadwood_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, "deadwood_wood")))));
+    public static final Block STRIPPED_DEADWOOD_LOG = registerBlock("stripped_deadwood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, "stripped_deadwood_log")))));
+    public static final Block STRIPPED_DEADWOOD_WOOD = registerBlock("stripped_deadwood_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, "stripped_deadwood_wood")))));
+
+    public static final Block DEADWOOD_PLANKS = registerBlock("deadwood_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, "deadwood_planks")))));
+    public static final Block DEADWOOD_LEAVES = registerBlock("deadwood_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, "deadwood_leaves")))));
+
+    public static final Block DEADWOOD_SAPLING = registerBlock("deadwood_sapling",
+            new SaplingBlock(ModSaplingGenerators.DEADWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, "deadwood_sapling")))));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

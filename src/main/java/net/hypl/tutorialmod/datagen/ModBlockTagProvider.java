@@ -32,5 +32,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DEADWOOD_LOG)
+                .add(ModBlocks.DEADWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_DEADWOOD_LOG)
+                .add(ModBlocks.STRIPPED_DEADWOOD_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.LOGS)
+                .add(ModBlocks.DEADWOOD_LOG)
+                .add(ModBlocks.DEADWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_DEADWOOD_LOG)
+                .add(ModBlocks.STRIPPED_DEADWOOD_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.DEADWOOD_LEAVES);
     }
 }

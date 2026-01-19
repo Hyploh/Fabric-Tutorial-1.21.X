@@ -78,6 +78,16 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.PINK_GARNET_LAMP);
 
+                        entries.add(ModBlocks.PINK_GARNET_NETHER_ORE);
+                        entries.add(ModBlocks.PINK_GARNET_END_ORE);
+
+                        entries.add(ModBlocks.DEADWOOD_LOG);
+                        entries.add(ModBlocks.DEADWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_DEADWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_DEADWOOD_WOOD);
+                        entries.add(ModBlocks.DEADWOOD_LEAVES);
+                        entries.add(ModBlocks.DEADWOOD_SAPLING);
+                        entries.add(ModBlocks.DEADWOOD_PLANKS);
 
                     }).build());
 

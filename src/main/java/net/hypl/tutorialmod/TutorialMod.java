@@ -3,9 +3,7 @@ package net.hypl.tutorialmod;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
-import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
-import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
-import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
+import net.fabricmc.fabric.api.registry.*;
 import net.hypl.tutorialmod.block.ModBlocks;
 import net.hypl.tutorialmod.component.ModDataComponentTypes;
 import net.hypl.tutorialmod.effect.ModEffects;
@@ -73,5 +71,16 @@ public class TutorialMod implements ModInitializer {
         CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER, 0.5f);
         CompostingChanceRegistry.INSTANCE.add(ModItems.CAULIFLOWER_SEEDS, 0.25f);
         CompostingChanceRegistry.INSTANCE.add(ModItems.BLUEBERRIES, 0.15f);
+
+        StrippableBlockRegistry.register(ModBlocks.DEADWOOD_LOG, ModBlocks.STRIPPED_DEADWOOD_LOG);
+        StrippableBlockRegistry.register(ModBlocks.DEADWOOD_WOOD, ModBlocks.STRIPPED_DEADWOOD_WOOD);
+
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DEADWOOD_LOG, 20, 40);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DEADWOOD_WOOD, 20, 40);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DEADWOOD_WOOD, 20, 40);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DEADWOOD_LOG, 20, 40);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DEADWOOD_PLANKS, 20, 50);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DEADWOOD_LEAVES, 40, 70);
+
     }
 }

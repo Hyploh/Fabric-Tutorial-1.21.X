@@ -11,10 +11,19 @@ import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.world.FeatureUpdater;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.FoliagePlacer;
+import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
+import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
+import net.minecraft.world.gen.trunk.TrunkPlacer;
 
 import java.util.List;
 
@@ -23,6 +32,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_GARNET_ORE_KEY = registerKey("pink_garnet_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_PINK_GARNET_ORE_KEY = registerKey("nether_pink_garnet_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> END_PINK_GARNET_ORE_KEY = registerKey("end_pink_garnet_ore");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEADWOOD_KEY = registerKey("deadwood");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -43,6 +54,15 @@ public class ModConfiguredFeatures {
         register(context, PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPinkGarnetOres, 8));
         register(context, NETHER_PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPinkGarnetOres, 5));
         register(context, END_PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(endPinkGarnetOres, 10));
+
+        register(context, DEADWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.DEADWOOD_LOG),
+                new ForkingTrunkPlacer(4,2,1),
+
+                BlockStateProvider.of(ModBlocks.DEADWOOD_LEAVES),
+                new AcaciaFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2)),
+
+                new TwoLayersFeatureSize(3,0,3)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

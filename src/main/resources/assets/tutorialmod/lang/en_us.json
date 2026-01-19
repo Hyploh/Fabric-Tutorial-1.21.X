@@ -61,6 +61,14 @@
   "block.tutorialmod.cauliflower_crop": "Cauliflower Crop",
   "block.tutorialmod.blueberry_bush": "Blueberry Bush",
 
+  "block.tutorialmod.deadwood_log": "Deadwood Log",
+  "block.tutorialmod.deadwood_wood": "Deadwood Wood",
+  "block.tutorialmod.stripped_deadwood_wood": "Stripped Deadwood Wood",
+  "block.tutorialmod.stripped_deadwood_log": "Stripped Deadwood Log",
+  "block.tutorialmod.deadwood_leaves": "Deadwood Leaves",
+  "block.tutorialmod.deadwood_sapling": "Deadwood Sapling",
+  "block.tutorialmod.deadwood_planks": "Deadwood Planks",
+
   "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
 
   "effect.tutorialmod.slimy": "Slimy",
