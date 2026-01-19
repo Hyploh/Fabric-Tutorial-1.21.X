@@ -1,4 +1,10 @@
-// 1.21.3	2026-01-19T17:50:21.2857768	Tutorial mod/
+// 1.21.3	2026-01-19T19:42:22.7198785	Tutorial mod/
 e02b11b3586e2842adbd2ac5583a8f37808dccb5 data\tutorialmod\trim_pattern\hypl.json
 e336321ea1fc9ae816052f453ffa3778fbb65e51 data\tutorialmod\enchantment\lightning_striker.json
 d611e722157e2a57c0295ddcf80d36f61245f5f7 data\tutorialmod\trim_material\pink_garnet.json
+9e95c32fce87811b1644ad85b521caf4559ef288 data\tutorialmod\worldgen\placed_feature\nether_pink_garnet_ore_placed.json
+10b879ba0f2da79b0f178e76ce55672498251628 data\tutorialmod\worldgen\placed_feature\end_pink_garnet_ore_placed.json
+db5342f8a22558f5e5c58716ea9c68e5fda6a5f2 data\tutorialmod\worldgen\configured_feature\nether_pink_garnet_ore.json
+a551a91cd7c01279a7f77df31c43535f4dbc0c12 data\tutorialmod\worldgen\configured_feature\end_pink_garnet_ore.json
+75cb33fd79bce18fe869b9e23c11abd32caa4310 data\tutorialmod\worldgen\placed_feature\pink_garnet_ore_placed.json
+b268e078c3824ec44ae09a96c1fd545c041e88b6 data\tutorialmod\worldgen\configured_feature\pink_garnet_ore.json
