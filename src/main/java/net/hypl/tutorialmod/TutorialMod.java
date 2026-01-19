@@ -15,6 +15,7 @@ import net.hypl.tutorialmod.item.ModItems;
 import net.hypl.tutorialmod.potion.ModPotions;
 import net.hypl.tutorialmod.sound.ModSounds;
 import net.hypl.tutorialmod.util.HammerUsageEvent;
+import net.hypl.tutorialmod.world.gen.ModWorldGeneration;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
@@ -42,6 +43,8 @@ public class TutorialMod implements ModInitializer {
         ModPotions.registerPotions();
 
         ModEnchantmentEffects.registerEnchantmentEffects();
+
+        ModWorldGeneration.generateModWorldGen();
 
         FuelRegistryEvents.BUILD.register((builder, context) -> {
             builder.add(ModItems.STARLIGHT_ASHES, 600);
