@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.hypl.tutorialmod.TutorialMod;
 import net.hypl.tutorialmod.block.ModBlocks;
+import net.hypl.tutorialmod.block.custom.BlueberryBushBlock;
 import net.hypl.tutorialmod.block.custom.CauliflowerCropBlock;
 import net.hypl.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.hypl.tutorialmod.item.ModItems;
@@ -43,6 +44,8 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BLUEBERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                BlueberryBushBlock.AGE, 0, 1, 2, 3);
     }
 
     @Override

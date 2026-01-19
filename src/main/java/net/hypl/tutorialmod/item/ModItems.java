@@ -116,6 +116,11 @@ public class ModItems {
             new BlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID, "cauliflower_seeds")))));
 
+    public static final Item BLUEBERRIES = registerItem("blueberries",
+            new BlockItem(ModBlocks.BLUEBERRY_BUSH, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID, "blueberries")))
+                    .food(ModFoodComponents.BLUEBERRIES)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
     }
