@@ -2,6 +2,7 @@ package net.hypl.tutorialmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hypl.tutorialmod.TutorialMod;
+import net.hypl.tutorialmod.block.ModBlocks;
 import net.hypl.tutorialmod.item.custom.ChiselItem;
 import net.hypl.tutorialmod.item.custom.HammerItem;
 import net.hypl.tutorialmod.item.custom.ModArmorItem;
@@ -110,6 +111,10 @@ public class ModItems {
             new Item(new Item.Settings()
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID,"bar_brawl_music_disc")))
                     .jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).maxCount(1)));
+
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
+            new BlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID, "cauliflower_seeds")))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);

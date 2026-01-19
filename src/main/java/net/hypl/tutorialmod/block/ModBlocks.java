@@ -2,11 +2,13 @@ package net.hypl.tutorialmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hypl.tutorialmod.TutorialMod;
+import net.hypl.tutorialmod.block.custom.CauliflowerCropBlock;
 import net.hypl.tutorialmod.block.custom.GardenMesh;
 import net.hypl.tutorialmod.block.custom.MagicBlock;
 import net.hypl.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.hypl.tutorialmod.sound.ModSounds;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -104,8 +106,17 @@ public class ModBlocks {
                     .strength(1f).requiresTool()
                     .luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)));
 
+    public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
+            new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, "cauliflower_crop")))
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, name), block);
+    }
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(TutorialMod.MOD_ID, name), block);
     }
 
