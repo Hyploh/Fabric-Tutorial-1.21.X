@@ -1,9 +1,9 @@
-// 1.21.3	2026-01-19T22:09:57.2457524	Tutorial mod/Tags for minecraft:block
+// 1.21.3	2026-01-20T12:23:57.7770135	Tutorial mod/Tags for minecraft:block
 079e21ee82e19be3b06c0ad61d06e9bdce588108 data\minecraft\tags\block\needs_iron_tool.json
 430b395655316da52cafaa8fbce49c7c08567e39 data\minecraft\tags\block\logs_that_burn.json
 bc494dc3fae10d0d201757eadbae5057733e5ad5 data\minecraft\tags\block\leaves.json
-32b13946c4cd1f944b029659ccce5fcb2adad4ff data\tutorialmod\tags\block\needs_pink_garnet_tool.json
 8159fdbcb7619cbd57674525489b6dfed8a407fd data\minecraft\tags\block\fence_gates.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data\tutorialmod\tags\block\needs_pink_garnet_tool.json
 87c23b954c6a1061edf28d30d87d40ccfecb8a8f data\minecraft\tags\block\fences.json
 430b395655316da52cafaa8fbce49c7c08567e39 data\minecraft\tags\block\logs.json
 c52562ba8bf97bf24d7fcbbc940bfc616fb735ff data\minecraft\tags\block\mineable\pickaxe.json

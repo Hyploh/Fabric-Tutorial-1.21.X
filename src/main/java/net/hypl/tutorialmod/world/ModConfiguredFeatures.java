@@ -57,12 +57,12 @@ public class ModConfiguredFeatures {
 
         register(context, DEADWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.DEADWOOD_LOG),
-                new ForkingTrunkPlacer(4,2,1),
+                new BendingTrunkPlacer(6,1,2, 5, ConstantIntProvider.create(3)),
 
                 BlockStateProvider.of(ModBlocks.DEADWOOD_LEAVES),
-                new AcaciaFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2)),
+                new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), 2),
 
-                new TwoLayersFeatureSize(3,0,3)).build());
+                new TwoLayersFeatureSize(5,2,3)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

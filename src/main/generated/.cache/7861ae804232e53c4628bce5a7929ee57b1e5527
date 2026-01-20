@@ -1,4 +1,4 @@
-// 1.21.3	2026-01-19T22:09:57.2437532	Tutorial mod/
+// 1.21.3	2026-01-20T12:23:57.7749321	Tutorial mod/
 e02b11b3586e2842adbd2ac5583a8f37808dccb5 data\tutorialmod\trim_pattern\hypl.json
 e336321ea1fc9ae816052f453ffa3778fbb65e51 data\tutorialmod\enchantment\lightning_striker.json
 d611e722157e2a57c0295ddcf80d36f61245f5f7 data\tutorialmod\trim_material\pink_garnet.json
@@ -8,5 +8,5 @@ d611e722157e2a57c0295ddcf80d36f61245f5f7 data\tutorialmod\trim_material\pink_gar
 db5342f8a22558f5e5c58716ea9c68e5fda6a5f2 data\tutorialmod\worldgen\configured_feature\nether_pink_garnet_ore.json
 a551a91cd7c01279a7f77df31c43535f4dbc0c12 data\tutorialmod\worldgen\configured_feature\end_pink_garnet_ore.json
 b268e078c3824ec44ae09a96c1fd545c041e88b6 data\tutorialmod\worldgen\configured_feature\pink_garnet_ore.json
-99d0ebef6186481769fc040556fb0b136fce82c1 data\tutorialmod\worldgen\configured_feature\deadwood.json
+a8ad41d3ab8cc4625f3984f08a9ebbf310437a79 data\tutorialmod\worldgen\configured_feature\deadwood.json
 75cb33fd79bce18fe869b9e23c11abd32caa4310 data\tutorialmod\worldgen\placed_feature\pink_garnet_ore_placed.json
