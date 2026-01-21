@@ -14,6 +14,7 @@ import net.hypl.tutorialmod.potion.ModPotions;
 import net.hypl.tutorialmod.sound.ModSounds;
 import net.hypl.tutorialmod.util.HammerUsageEvent;
 import net.hypl.tutorialmod.world.gen.ModWorldGeneration;
+import net.minecraft.block.Block;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
